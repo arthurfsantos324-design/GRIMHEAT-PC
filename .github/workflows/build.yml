@@ -1,0 +1,28 @@
+name: Build GRIMHEAT for Windows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Download project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build EXE
+        run: npm run build
+
+      - name: Upload game
+        uses: actions/upload-artifact@v4
+        with:
+          name: GRIMHEAT-Windows-EXE
+          path: dist/
