@@ -1,0 +1,12 @@
+GRIMHEAT - gerar EXE usando GitHub Actions pelo celular
+
+1. Extraia este ZIP.
+2. No navegador do celular, entre em https://github.com e crie um repositório novo chamado GRIMHEAT-PC.
+3. Envie os arquivos e pastas deste projeto para o repositório. IMPORTANTE: inclua a pasta oculta .github e o arquivo .github/workflows/build-windows.yml.
+4. Faça commit dos arquivos na branch main (ou master).
+5. Abra a aba Actions do repositório e selecione "Build GRIMHEAT for Windows".
+6. Se aparecer, toque em "Run workflow" e confirme.
+7. Aguarde a execução ficar verde. Abra a execução concluída e baixe o artefato "GRIMHEAT-Windows-EXE" na seção Artifacts.
+8. Extraia o ZIP baixado. Dentro estará o GRIMHEAT.exe.
+
+Nota: o primeiro envio pelo site móvel pode ser mais fácil usando Add file > Upload files. Se o GitHub não permitir enviar a pasta .github pelo celular, use o menu de criação de arquivo para criar .github/workflows/build-windows.yml e cole o conteúdo do arquivo correspondente.

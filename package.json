@@ -1,0 +1,30 @@
+{
+  "name": "grimheat",
+  "version": "1.0.0",
+  "description": "GRIMHEAT dark platformer",
+  "main": "main.js",
+  "author": "GRIMHEAT",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dist:win": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^38.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.grimheat.game",
+    "productName": "GRIMHEAT",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": ["portable"]
+    }
+  }
+}
